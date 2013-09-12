@@ -6,9 +6,9 @@
  *
 /* Datos Generales inicio del doc.*/
 body												{background-color:#93541d;}
-.medidasPaginas 									{width: 90%;height: 100%; float:left;}
-#deviceready,#cuerpoDeApps							{width:90%;height: 100%;float:left;}
-.footer												{position:fixed; left:0px; bottom:0px; height:30px; width:90%;}
+.medidasPaginas 									{width: 100%;height: 100%;text-align: center;}
+#deviceready,#cuerpoDeApps							{width:100%;height: 100%;float:left;}
+.footer												{position:fixed; left:0px; bottom:0px; height:30px; width:100%;}
 /*pagelogin*/
 #pageLogin 											{background-color:#93541d;}
 #pageLogin .header .titulo							{font-size:2.5em; text-align: center; color:#ffffff; margin-top:10%;}
