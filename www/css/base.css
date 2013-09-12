@@ -9,6 +9,11 @@ body {-webkit-touch-callout: none; -webkit-user-select: none; height:100%; margi
 .ui-loader{display:none !important;}
 .ui-btn-inner{display:none !important;}
 
+/* Landscape */
+@media screen and (orientation:landscape) {
+    #pageLogin .header .titulo                          {font-size:2.5em; text-align: center; color:#ffffff; margin-top:2%;}
+}
+
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     #contenedorApp {
         background-position:left center;
