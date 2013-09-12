@@ -20,9 +20,9 @@ body												{background-color:#93541d;}
 #pageLogin form input[type=submit]					{border:none;border-radius: 6px; width:90%;min-height:90px; max-height: 80px; background-color:#14b9d6; color:#ffffff;font-size: 2em;}
 #pageLogin .footer .menuContenedor					{width:600px;}
 #pageLogin .footer .menuContenedor div				{color:#ffc200;}
-#pageLogin .footer .menuContenedor .Na				{margin-left:5%;}
+#pageLogin .footer .menuContenedor .Na	a			{margin-left:5%;}
 #pageLogin .footer .menuContenedor .divi			{margin-left:28%;}
-#pageLogin .footer .menuContenedor .Lp				{margin-left:29%;}
+#pageLogin .footer .menuContenedor .Lp	a			{margin-left:29%;}
 #pageLogin .footer									{position:fixed; left:0px; bottom:12%; height:30px; width:100%;}
 /*iconos sprite*/
 	/*.iconoLogUser										{background: url("../template/sprite.png") no-repeat scroll 0 0 transparent; width:36px;height: 36px; margin: 15px 680px;}
