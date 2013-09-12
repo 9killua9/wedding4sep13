@@ -11,13 +11,13 @@ body												{background-color:#93541d;}
 .footer												{position:fixed; left:0px; bottom:0px; height:30px; width:100%;}
 /*pagelogin*/
 #pageLogin 											{background-color:#93541d;}
-#pageLogin .header .titulo							{font-size:2.5em; text-align: center; color:#ffffff; margin-top:20%;}
-#pageLogin .header .subtitulo						{font-size:1.6em; color:#c77e3e; text-align: center;}
-#pageLogin form										{margin-top:9%; width:100%;text-align: center;}
+#pageLogin .header .titulo							{font-size:3.0em; text-align: center; color:#ffffff; margin-top:10%;}
+#pageLogin .header .subtitulo						{font-size:2.2em; color:#c77e3e; text-align: center;}
+#pageLogin form										{margin-top:14%; width:100%;text-align: center;}
 #pageLogin form .conteInputs						{width:100%; margin:0 auto;}
 #pageLogin form .conteInputs input[type=text]		{border:none;border-radius: 6px; width:90%;min-height:90px; max-height: 80px; font-size:17px;padding-left:3px; background: url("../template/usuario.png") no-repeat scroll 96% 30px #ffffff;}
 #pageLogin form .conteInputs input[type=password]	{border:none;border-radius: 6px; width:90%;min-height:90px; max-height: 80px; font-size:17px;padding-left:3px;margin:4% 0 4% 0;  background: url("../template/password.png") no-repeat scroll 96% 30px  #ffffff;}
-#pageLogin form input[type=submit]					{border:none;border-radius: 6px; width:90%;min-height:90px; max-height: 80px; background-color:#14b9d6; color:#ffffff;font-size: 16px;}
+#pageLogin form input[type=submit]					{border:none;border-radius: 6px; width:90%;min-height:90px; max-height: 80px; background-color:#14b9d6; color:#ffffff;font-size: 2em;}
 #pageLogin .footer .menuContenedor					{width:600px;}
 #pageLogin .footer .menuContenedor div				{color:#ffc200;}
 #pageLogin .footer .menuContenedor .Na				{margin-left:5%;}
