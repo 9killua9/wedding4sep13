@@ -4,18 +4,53 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        
+        <link rel="stylesheet" type="text/css" href="css/gral.css" />
         <link rel="stylesheet" type="text/css" href="css/base.css" />
-        <title>Hello World</title>
+        <link rel="stylesheet" type="text/css" href="css/site.css" />
+
+        <script type="text/javascript" src="js/jquery/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery/jquerymobile.js"></script>
+
+        <title>Wedding</title>
     </head>
     <body>
-        <div id="contenedorApp">
-            <h1>PhoneGap</h1>
+        <div id="contenedorApp w100 h100">
             <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+                <p class="event listening oculto">Loading ...</p>
+                <div class="event received" id="cuerpoDeApps">
+                    <div class="positionAbsolute medidasPaginas" id="pageLogin">
+                        <div class="header margin0auto">
+                            <div class="titulo">Best Miami Weddings</div>
+                            <div class="subtitulo">Version 1.0 Beta</div>
+                            <form name="login">
+                                <div class="conteInputs">
+                                    <div class="positionAbsolute iconoLogUser"></div>
+                                    <input type="text" name="user" />
+                                </div>
+                                <div class="conteInputs">
+                                    <div class="positionAbsolute iconoLogPass"></div>
+                                    <input type="password" name="password" />
+                                </div>
+                                <div class="conteInputs">
+                                    <input type="submit" value=" Login " class="botonAzul" />
+                                </div>
+                            </form>
+                            <div class="footer textAlignCenter">
+                                <div class="menuContenedor margin0auto">
+                                    <div class="floatLeft Na"> New Account</div>
+                                    <div class="floatLeft divi">|</div>
+                                    <div class="floatLeft Lp"> Lost Password</div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fin pagelogin -->
+                </div><!-- Fin de cuerpo de apps -->
             </div>
         </div>
-        <script type="text/javascript" src="phonegap.js"></script>
+        
+        <script type="text/javascript" src="js/cordova.js"></script>
+        
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();

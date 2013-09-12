@@ -1,0 +1,57 @@
+/**
+ *@author: Leandro Salar
+ *@empresa: Reiatsu.com.ar
+ *@web: reiatsu.com.ar
+ *@data: Framework .3
+ **/
+
+/* ·························    General del site      ························································· */
+/* ············································································································ */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; } article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ""; content: none; } .clearfix:before, .clearfix:after { content: ""; display: table; } .clearfix:after { clear: both; } .clearfix { zoom: 1; }
+/* ·························    Optimizadores prefedifinidos      ············································· */
+/* ············································································································ */
+    /* flotantes */
+.floatLeft{float:left;}
+.floatRight{float:right;}
+.clearBoth{clear:both;}
+    /* posiciones */
+.positionAbsolute,.positionabsolute{position:absolute;}
+.positionRelative{position:relative;}
+.positionFixed{position:fixed;}
+.margin0Auto, .margin0auto{margin:0 auto;}
+.overflowHidden{overflow:hidden;}
+.zIndex-1{z-index:-1 !important;}
+    /* textos */
+.fontWeightBold{font-weight:bolder;}
+.mayuscula{text-transform:uppercase;}
+.textAlignCenter{text-align:center;}
+.bold,.negrita{font-weight:bold}
+    /* cursores */
+.cursorPointer, .cursor{cursor:pointer;}
+.oculto, .escondido{display:none;}
+.w100{width:100%;}
+.h100{height:100%;}
+.noBorde,.borderNone{border:none !important;}
+     /* igualdad de inputs */
+input[type=text], select, textarea {border:none;}
+    /* links */
+a { text-decoration:none !important;}
+a:hover{}
+
+/* Tam */
+.w1000{width:1000px;}
+.w100{width:100%;}
+    /* Colores  */
+.rosa{color:#e43d99 !important;}
+.verdeAgua{color:#0a9673 !important;}
+.gris{color:#6d6d68 !important;}
+.naranja{color:#dd8f0d !important;}
+.marron{color:#f2efe8 !important;}
+.violeta{color:#6c6caa !important;}
+.celeste{color:#71a8b5 !important;}
+.rojo{color:#b85e5e !important;}
+.negro{color:#565656 !important;}
+.blanco{color:#f0f0f0 !important;}
+.rojoClaro{color:#feaaaa !important;}
+image{image-rendering: optimizequality;}
+*{-webkit-font-smoothing: subpixel-antialiased !important;  font-smoothing: subpixel-antialiased !important;  -moz-font-smoothing: subpixel-antialiased !important;}

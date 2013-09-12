@@ -1,0 +1,50 @@
+/**
+ *@author: Leandro Salar
+ *@empresa: Reiatsu.com.ar
+ *@web: reiatsu.com.ar
+ *@data: Framework .3
+ *
+/* Datos Generales inicio del doc.*/
+.medidasPaginas 									{width: 100%;height: 100%; float:left;}
+#deviceready,#cuerpoDeApps							{width:100%;height: 100%;float:left;}
+.footer												{position:fixed; left:0px; bottom:0px; height:30px; width:100%;}
+/*pagelogin*/
+#pageLogin 											{background-color:#93541d;}
+#pageLogin .header .titulo							{font-size:22px; text-align: center; color:#ffffff; margin-top:6%;}
+#pageLogin .header .subtitulo						{font-size:12px; color:#c77e3e; text-align: center;}
+#pageLogin form										{margin-top:3%; width:100%;text-align: center;}
+#pageLogin form .conteInputs						{width:800px; margin:0 auto;}
+#pageLogin form .conteInputs input[type=text]		{border:none;border-radius: 6px; width:80%;height:40px; font-size:17px;padding-left:3px;}
+#pageLogin form .conteInputs input[type=password]	{border:none;border-radius: 6px; width:80%;height:40px; font-size:17px;padding-left:3px;margin:14px 0 14px 0;}
+#pageLogin form input[type=submit]					{border:none;border-radius: 6px; width:80%;height:40px;background-color:#14b9d6; color:#ffffff;font-size: 16px;}
+#pageLogin .footer .menuContenedor					{width:600px;}
+#pageLogin .footer .menuContenedor div				{color:#ffc200;}
+#pageLogin .footer .menuContenedor .Na				{margin-left:5%;}
+#pageLogin .footer .menuContenedor .divi			{margin-left:28%;}
+#pageLogin .footer .menuContenedor .Lp				{margin-left:29%;}
+
+/*iconos sprite*/
+.iconoLogUser										{background: url("../template/sprite.png") no-repeat scroll 0 0 transparent; width:36px;height: 36px; margin: 5px 680px;}
+.iconoLogPass										{background: url("../template/sprite.png") no-repeat scroll 0 -42px transparent; width:36px;height: 36px; margin: 19px 680px;}
+
+/*Animaciones y transiciones*/
+/*Fade de centrado */
+@-webkit-keyframes animacionFadeCenterScale {
+	0% { opacity: 0; -webkit-transform: scale(.1);}
+	85% {opacity: 1; -webkit-transform: scale(1.05);}
+	100% {-webkit-transform: scale(1); opacity: 1;}
+}
+
+.animacionFadeCenterScale {
+    -webkit-animation: animacionFadeCenterScale .5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+    background-color: #000;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+}
+
+.animacionFadeCenterScale.one {-webkit-animation-delay: .5s;}
+.animacionFadeCenterScale.two {-webkit-animation-delay: 1.5s;}
+.animacionFadeCenterScale.three {-webkit-animation-delay: 2.5s;}
