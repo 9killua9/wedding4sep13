@@ -13,7 +13,7 @@ body												{background-color:#93541d;}
 #pageLogin 											{background-color:#93541d;}
 #pageLogin .header .titulo							{font-size:3.0em; text-align: center; color:#ffffff; margin-top:10%;}
 #pageLogin .header .subtitulo						{font-size:2.2em; color:#c77e3e; text-align: center;}
-#pageLogin form										{margin-top:14%; width:100%;text-align: center;}
+#pageLogin form										{margin-top:17%; width:100%;text-align: center;}
 #pageLogin form .conteInputs						{width:100%; margin:0 auto;}
 #pageLogin form .conteInputs input[type=text]		{border:none;border-radius: 6px; width:90%;min-height:90px; max-height: 80px; font-size:17px;padding-left:3px; background: url("../template/usuario.png") no-repeat scroll 96% 30px #ffffff;}
 #pageLogin form .conteInputs input[type=password]	{border:none;border-radius: 6px; width:90%;min-height:90px; max-height: 80px; font-size:17px;padding-left:3px;margin:4% 0 4% 0;  background: url("../template/password.png") no-repeat scroll 96% 30px  #ffffff;}

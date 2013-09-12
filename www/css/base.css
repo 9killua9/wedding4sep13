@@ -11,7 +11,12 @@ body {-webkit-touch-callout: none; -webkit-user-select: none; height:100%; margi
 
 /* Landscape */
 @media screen and (orientation:landscape) {
-    #pageLogin .header .titulo                          {font-size:2.5em; text-align: center; color:#ffffff; margin-top:2% !important;}
+    #pageLogin .header .titulo {
+        margin-top:2% !important;
+    }
+    #pageLogin form {
+        margin-top:9% !important;
+    }
 }
 
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
