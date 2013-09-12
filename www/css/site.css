@@ -13,11 +13,11 @@ body												{background-color:#93541d;}
 #pageLogin 											{background-color:#93541d;}
 #pageLogin .header .titulo							{font-size:2.5em; text-align: center; color:#ffffff; margin-top:10%;}
 #pageLogin .header .subtitulo						{font-size:1.6em; color:#c77e3e; text-align: center;}
-#pageLogin form										{margin-top:7%; width:90%;text-align: center;}
+#pageLogin form										{margin-top:7%; width:100%;text-align: center;}
 #pageLogin form .conteInputs						{width:100%; margin:0 auto;}
-#pageLogin form .conteInputs input[type=text]		{border:none;border-radius: 6px; width:100%;height:50px; font-size:17px;padding-left:3px; background: url("../template/sprite.png") no-repeat scroll 150% 11px #ffffff;}
-#pageLogin form .conteInputs input[type=password]	{border:none;border-radius: 6px; width:100%;height:50px; font-size:17px;padding-left:3px;margin:4% 0 4% 0;  background: url("../template/sprite.png") no-repeat scroll 150% -33px #ffffff;}
-#pageLogin form input[type=submit]					{border:none;border-radius: 6px; width:100%;height:50px;background-color:#14b9d6; color:#ffffff;font-size: 16px;}
+#pageLogin form .conteInputs input[type=text]		{border:none;border-radius: 6px; width:90%;height:50px; font-size:17px;padding-left:3px; background: url("../template/sprite.png") no-repeat scroll 150% 11px #ffffff;}
+#pageLogin form .conteInputs input[type=password]	{border:none;border-radius: 6px; width:90%;height:50px; font-size:17px;padding-left:3px;margin:4% 0 4% 0;  background: url("../template/sprite.png") no-repeat scroll 150% -33px #ffffff;}
+#pageLogin form input[type=submit]					{border:none;border-radius: 6px; width:90%;height:50px;background-color:#14b9d6; color:#ffffff;font-size: 16px;}
 #pageLogin .footer .menuContenedor					{width:600px;}
 #pageLogin .footer .menuContenedor div				{color:#ffc200;}
 #pageLogin .footer .menuContenedor .Na				{margin-left:5%;}
