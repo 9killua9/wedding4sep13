@@ -3,7 +3,9 @@
 font-family: lato;
     src: url('../fonts/latoregular.ttf');
 }
-* {-webkit-tap-highlight-color: rgba(0,0,0,0); font-family: lato;}
+
+* {-webkit-tap-highlight-color: rgba(0,0,0,0); font-family: lato; font-size: 2em;}
+
 body {-webkit-touch-callout: none; -webkit-user-select: none; height:100%; margin:0px; padding:0px; width:100%; }
 #contenedorApp {position:absolute; }
 .ui-loader{display:none !important;}
@@ -17,6 +19,9 @@ body {-webkit-touch-callout: none; -webkit-user-select: none; height:100%; margi
     #pageLogin form {
         margin-top:9% !important;
     }
+    #pageLogin .footer{
+        bottom:4% !important;
+    }
 }
 
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
@@ -27,8 +32,11 @@ body {-webkit-touch-callout: none; -webkit-user-select: none; height:100%; margi
     }
 }
 @media screen and (max-width: 1024px) {
+
 }
 @media screen and (max-width: 810px) {
+
 }
 @media screen and (max-width: 320px) {
+
 }
