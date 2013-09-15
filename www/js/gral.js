@@ -38,9 +38,26 @@ function cargaTotal()
         a.preventDefault();
         if( $("form[name=login] input[name=user]").val().length > 4 && $("form[name=login] input[name=password]").val() != "" )
         {
-            alert("entra al if");
+            alert($url);
             $data = 'h=login&'+$("form[name=login]").serialize();
-            lmPost($url,$data,"login");
+            alert($data);
+            $.ajax({
+                type:'POST',
+                url: $url,
+                data: $data,
+                dataType: 'json',
+                success: function(v){
+                    
+                    if( v == null )
+                    {
+                        v = " Sin resultados ";
+                    }
+                    alert("hace devolucion");
+                    
+                    termina(xq,v);
+                }
+            });
+            /*lmPost($url,$data,"login");*/
         }
         else
             alert("Complete Nick and Password");
@@ -69,9 +86,9 @@ function cambiaSeccion(page)
 function lmPost($url,$data,xq)
 {
     alert("entra Lmpost")
-    $devolucion="";
+
     $.ajax({
-        type:'post',
+        type:'POST',
         url: $url,
         data: $data,
         dataType: 'json',
@@ -81,7 +98,7 @@ function lmPost($url,$data,xq)
             {
                 v = " Sin resultados ";
             }
-            alert("hace devolucion")
+            alert("hace devolucion");
             
             termina(xq,v);
         }
