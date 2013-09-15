@@ -1,10 +1,3 @@
-/**
- *
- *@author: Leandro Salar, Marcelo Salar.
- *@version: 0.1;
- *@argument: Framework de trabajo de Reiatsu.com.ar
- **/
-
 $(document).ready(function(){
 });
 

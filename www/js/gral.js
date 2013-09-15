@@ -36,7 +36,6 @@ function cargaTotal()
     /* Login y usuarios */
     $("form[name=login]").submit(function(a){
         a.preventDefault();
-        alert("entr al submit")
         if( $("form[name=login] input[name=user]").val().length > 4 && $("form[name=login] input[name=password]").val() != "" )
         {
             alert("entra al if");
@@ -65,6 +64,28 @@ function cambiaSeccion(page)
             break;
         }
     },700);
+}
+
+function lmPost($url,$data,xq)
+{
+    alert("entra Lmpost")
+    $devolucion="";
+    $.ajax({
+        type:'post',
+        url: $url,
+        data: $data,
+        dataType: 'json',
+        success: function(v){
+            
+            if( v == null )
+            {
+                v = " Sin resultados ";
+            }
+            alert("hace devolucion")
+            
+            termina(xq,v);
+        }
+    });
 }
 /* Funciones de el framework para leer los resultados del ajax
 =================================================================== */
