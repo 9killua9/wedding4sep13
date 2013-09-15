@@ -38,26 +38,8 @@ function cargaTotal()
         a.preventDefault();
         if( $("form[name=login] input[name=user]").val().length > 4 && $("form[name=login] input[name=password]").val() != "" )
         {
-            alert($url);
             $data = 'h=login&'+$("form[name=login]").serialize();
-            alert($data);
-            $.ajax({
-                type:'POST',
-                url: $url,
-                data: $data,
-                dataType: 'json',
-                success: function(v){
-                    
-                    if( v == null )
-                    {
-                        v = " Sin resultados ";
-                    }
-                    alert("hace devolucion");
-                    
-                    termina(xq,v);
-                }
-            });
-            /*lmPost($url,$data,"login");*/
+            lmPost($url,$data,"login");
         }
         else
             alert("Complete Nick and Password");
@@ -85,8 +67,6 @@ function cambiaSeccion(page)
 
 function lmPost($url,$data,xq)
 {
-    alert("entra Lmpost")
-
     $.ajax({
         type:'POST',
         url: $url,
@@ -114,6 +94,7 @@ function termina(xq,v)
      */
     if( xq == "login" )
     {
+        alert("entra al login");
         if(v['aviso'] == "si")
         {
             window.localStorage.setItem("ur", v['nick']);
