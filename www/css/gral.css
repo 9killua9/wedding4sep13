@@ -38,20 +38,5 @@ input[type=text], select, textarea {border:none;}
 a { text-decoration:none !important;}
 a:hover{}
 
-/* Tam */
-.w1000{width:1000px;}
-.w100{width:100%;}
-    /* Colores  */
-.rosa{color:#e43d99 !important;}
-.verdeAgua{color:#0a9673 !important;}
-.gris{color:#6d6d68 !important;}
-.naranja{color:#dd8f0d !important;}
-.marron{color:#f2efe8 !important;}
-.violeta{color:#6c6caa !important;}
-.celeste{color:#71a8b5 !important;}
-.rojo{color:#b85e5e !important;}
-.negro{color:#565656 !important;}
-.blanco{color:#f0f0f0 !important;}
-.rojoClaro{color:#feaaaa !important;}
 image{image-rendering: optimizequality;}
 *{-webkit-font-smoothing: subpixel-antialiased !important;  font-smoothing: subpixel-antialiased !important;  -moz-font-smoothing: subpixel-antialiased !important;}

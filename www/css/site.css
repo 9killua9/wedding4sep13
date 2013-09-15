@@ -6,7 +6,7 @@
  *
 /* Datos Generales inicio del doc.*/
 body												{background-color:#93541d;}
-.medidasPaginas 									{width: 100%;height: 100%;text-align: center;}
+.medidasPaginas 									{width: 100%;height: 100%;text-align: center;position:absolute;}
 #deviceready,#cuerpoDeApps							{width:100%;height: 100%;float:left;}
 .footer												{position:fixed; left:0px; bottom:0px; height:30px; width:100%;}
 /*pagelogin*/
@@ -25,15 +25,33 @@ body												{background-color:#93541d;}
 #pageLogin .footer .menuContenedor .Lp				{margin-left:17%;color:#ffc200;}
 #pageLogin .footer .menuContenedor div a 			{color:#ffc200; font-size: 1.7em;}
 #pageLogin .footer									{position:fixed; left:0px; bottom:12%; height:30px; width:100%;}
-/*iconos sprite*/
-	/*.iconoLogUser										{background: url("../template/sprite.png") no-repeat scroll 0 0 transparent; width:36px;height: 36px; margin: 15px 680px;}
-	.iconoLogPass										{background: url("../template/sprite.png") no-repeat scroll 0 -42px transparent; width:36px;height: 36px; margin: 46px 680px;}
-	*/
+
+/*colores*/
+.rojo                                               {color:#c0392b;}
+.naranja                                            {color:#f7ae22;}
+.verder                                             {color:#1fbba6;}
+.celeste                                            {color:#14b9d6;}
+.azul                                               {color:#2e92d4;}
+.gris                                               {color:#959595;}
+.blanco                                             {color:#ffffff;}
+.negro                                              {color:#000000;}
+
+/*pagemenu*/
+#pageMenu{background-color:#ffffff;}
+#pageMenu .header                                   {width:100%; height:90px; background-color:#93541d;}
+#pageMenu .header .headerTitulo                     {font-size:2em; width:100%;padding-top: 12px;padding-top:25px;}
+#pageMenu .header .headerTitulo .imagen             {margin:0 30px 0 -30px;}
+#pageMenu .bordeDerAba                              {border-right: 1px solid #999999;border-bottom:1px solid #999999; background-color:#f0f0f0;}
+#pageMenu .bordeDer                                 {border-right: 1px solid #999999; background-color:#f0f0f9;}
+#pageMenu .bordeAba                                 {border-bottom:1px solid #999999; background-color:#f0f0f4;}
+#pageMenu .dashboardCubos                           {}
+
+
 /*Animaciones y transiciones*/
 /*Fade de centrado */
 @-webkit-keyframes animacionFadeCenterScale {
-	0% { opacity: 0; -webkit-transform: scale(.1);}
-	85% {opacity: 1; -webkit-transform: scale(1.05);}
+	0% { opacity: 0; -webkit-transform: scale(.1);display:none;}
+	85% {opacity: 1; -webkit-transform: scale(1.05); display:block;}
 	100% {-webkit-transform: scale(1); opacity: 1;}
 }
 
@@ -41,12 +59,24 @@ body												{background-color:#93541d;}
     -webkit-animation: animacionFadeCenterScale .5s ease-in;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-iteration-count: 1;
-    background-color: #000;
-    width: 100px;
-    height: 100px;
     opacity: 0;
 }
 
 .animacionFadeCenterScale.one {-webkit-animation-delay: .5s;}
 .animacionFadeCenterScale.two {-webkit-animation-delay: 1.5s;}
 .animacionFadeCenterScale.three {-webkit-animation-delay: 2.5s;}
+
+/*Fade de centrado */
+@-webkit-keyframes animacionFadeCenterScaleOut {
+    0% {-webkit-transform: scale(1); opacity: 1;}
+    85% {opacity: 1; -webkit-transform: scale(.5); display:block;}
+    100% { opacity: 0; -webkit-transform: scale(.1);display:none;}
+}
+
+.animacionFadeCenterScaleOut {
+    -webkit-animation: animacionFadeCenterScaleOut .5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+    opacity: 1;
+}
+.animacionFadeCenterScaleOut.one {-webkit-animation-delay: .5s;}

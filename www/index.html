@@ -10,6 +10,8 @@
         <link rel="stylesheet" type="text/css" href="css/site.css" />
 
         <script type="text/javascript" src="js/jquery/jquery.js"></script>
+        <script type="text/javascript" src="js/lmf/lmf.js"></script>
+        <script type="text/javascript" src="js/gral.js"></script>
 
         <title>Wedding</title>
     </head>
@@ -25,6 +27,7 @@
                         </div>
 
                         <form name="login" class="textAlignCenter">
+                            <input type="hidden" name="dispositivo" value="cellphone" />
                             <div class="conteInputs">
                                 <input type="text" name="user" />
                             </div>
@@ -43,12 +46,38 @@
                             </div>
                         </div><!-- footer -->
                     </div><!-- Fin pagelogin -->
+
+                    <div class="medidasPaginas oculto" id="pageMenu">
+                        <div class="header colorDashboard"> 
+                            <div class="textAlignCenter headerTitulo blanco"> 
+                                Dashboard 
+                                <div class="imagen floatRight"> 
+                                    <img src="template/iconos/lupa.png" class="lupa" /> 
+                                    <div class="oculto contenedorBusqueda">
+                                        <form name="buscarDashboard">
+                                            <input type="text" name="buscarDashboard" class="buscarDashboard" />
+                                        </form>
+                                    </div>
+                                </div><!-- fin imagen -->
+                            </div>
+                        </div><!-- fin header -->
+                        
+                        <div class="dashboardCubos oculto floatLeft bordeDerAba"></div>
+                        <div class="dashboardCubos oculto floatLeft bordeAba"></div>
+                        <div class="clearBoth"></div>
+                        <div class="dashboardCubos oculto floatLeft bordeDerAba"></div>
+                        <div class="dashboardCubos oculto floatLeft bordeAba"></div>
+                        <div class="clearBoth"></div>
+                        <div class="dashboardCubos oculto floatLeft bordeDer"></div>
+                        <div class="dashboardCubos oculto floatLeft "></div>
+                    </div><!-- Fin pageMenu -->
+
                 </div><!-- Fin de cuerpo de apps -->
             </div>
         </div>
-        <!-- 
+        
         <script type="text/javascript" src="js/cordova.js"></script>
-         -->
+        
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
