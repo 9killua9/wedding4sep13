@@ -36,8 +36,10 @@ function cargaTotal()
     /* Login y usuarios */
     $("form[name=login]").submit(function(a){
         a.preventDefault();
+        alert("entr al submit")
         if( $("form[name=login] input[name=user]").val().length > 4 && $("form[name=login] input[name=password]").val() != "" )
         {
+            alert("entra al if");
             $data = 'h=login&'+$("form[name=login]").serialize();
             lmPost($url,$data,"login");
         }
@@ -80,6 +82,8 @@ function termina(xq,v)
             window.localStorage.setItem("dispositivo", v['dispositivo']);
 
             cambiaSeccion("pageMenu");
+
+            alert(v['aviso']);
         }
     }
 }
