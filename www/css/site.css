@@ -46,10 +46,10 @@ body												{background-color:#93541d;}
 #pageMenu .bordeDer                                 {border-right: 1px solid #999999;}
 #pageMenu .bordeAba                                 {border-bottom:1px solid #999999;}
 #pageMenu .dashboardCubos                           {background-color:#f9f6e7;}
-#pageMenu .dashboardCubos .titulo                   {margin-left:3%;font-size: 4em; width:80%; height: 60%; float:left;}
+#pageMenu .dashboardCubos .titulo                   {margin-left:3%;font-size: 3em; width:80%; height: 60%; float:left;}
 #pageMenu .dashboardCubos .footerInterno            {width:100%;float:left;}
 #pageMenu .dashboardCubos .footerInterno .icono     {float:left;margin-left:4%;}
-#pageMenu .dashboardCubos .footerInterno .numero    {float:right; margin-right: 5%;font-size: 4em;}
+#pageMenu .dashboardCubos .footerInterno .numero    {float:right; margin-right: 7%;font-size: 5em;}
 
 
 /*Animaciones y transiciones*/

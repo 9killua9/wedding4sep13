@@ -46,6 +46,6 @@ var app = {
         
         setTimeout(function(){
             cargaTotal();
-        },1500);
+        },2000);
     }
 };
