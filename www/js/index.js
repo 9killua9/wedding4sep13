@@ -44,6 +44,8 @@ var app = {
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
         
-        cargaTotal();
+        setTimeout(function(){
+            cargaTotal();
+        },700);
     }
 };
