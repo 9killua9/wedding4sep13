@@ -9,6 +9,7 @@ body												{background-color:#93541d;}
 .medidasPaginas 									{width: 100%;height: 100%;text-align: center;position:absolute;}
 #deviceready,#cuerpoDeApps							{width:100%;height: 100%;float:left;}
 .footer												{position:fixed; left:0px; bottom:0px; height:30px; width:100%;}
+.textAlignLeft                                      {text-align: left !important;}
 /*pagelogin*/
 #pageLogin 											{background-color:#93541d;}
 #pageLogin .header .titulo							{font-size:3.0em; text-align: center; color:#ffffff; margin-top:10%;}
@@ -29,7 +30,7 @@ body												{background-color:#93541d;}
 /*colores*/
 .rojo                                               {color:#c0392b;}
 .naranja                                            {color:#f7ae22;}
-.verder                                             {color:#1fbba6;}
+.verde                                              {color:#1fbba6;}
 .celeste                                            {color:#14b9d6;}
 .azul                                               {color:#2e92d4;}
 .gris                                               {color:#959595;}
@@ -41,10 +42,14 @@ body												{background-color:#93541d;}
 #pageMenu .header                                   {width:100%; height:90px; background-color:#93541d;}
 #pageMenu .header .headerTitulo                     {font-size:2em; width:100%;padding-top: 12px;padding-top:25px;}
 #pageMenu .header .headerTitulo .imagen             {margin:0 30px 0 -30px;}
-#pageMenu .bordeDerAba                              {border-right: 1px solid #999999;border-bottom:1px solid #999999; background-color:#f0f0f0;}
-#pageMenu .bordeDer                                 {border-right: 1px solid #999999; background-color:#f0f0f9;}
-#pageMenu .bordeAba                                 {border-bottom:1px solid #999999; background-color:#f0f0f4;}
-#pageMenu .dashboardCubos                           {}
+#pageMenu .bordeDerAba                              {border-right: 1px solid #999999;border-bottom:1px solid #999999;}
+#pageMenu .bordeDer                                 {border-right: 1px solid #999999;}
+#pageMenu .bordeAba                                 {border-bottom:1px solid #999999;}
+#pageMenu .dashboardCubos                           {background-color:#f9f6e7;}
+#pageMenu .dashboardCubos .titulo                   {margin-left:3%;font-size: 260%; width:80%; height: 60%; float:left;}
+#pageMenu .dashboardCubos .footerInterno            {width:100%;float:left;}
+#pageMenu .dashboardCubos .footerInterno .icono     {float:left;margin-left:4%;}
+#pageMenu .dashboardCubos .footerInterno .numero    {float:right; margin-right: 5%;font-size: 4em;}
 
 
 /*Animaciones y transiciones*/

@@ -19,7 +19,7 @@ $(".nada").click(function(a){
     	a.preventDefault();
     });     
 
-    /*cargaTotal();*/
+    cargaTotal();
 });
 
 function cargaTotal()
