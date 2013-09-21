@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.hello-world" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>HelloWorld</name>
+    <name>wedding - Lead demo</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Wedding - lead demo
     </description>
     <author email="info@reiatsu.com.ar" href="http://reiatsu.com.ar">
-        PhoneGap Team
+        Reiatsu developers
     </author>
     <feature name="http://api.phonegap.com/1.0/device" />
     <preference name="permissions" value="none" />
