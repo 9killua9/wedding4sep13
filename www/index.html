@@ -10,6 +10,7 @@
         <link rel="stylesheet" type="text/css" href="css/site.css" />
 
         <script type="text/javascript" src="js/jquery/jquery.js"></script>
+        <script type="text/javascript" src="js/hammer/hjquery.js"></script>
         <script type="text/javascript" src="js/gral.js"></script>
 
         <title>Wedding</title>
@@ -61,14 +62,14 @@
                             </div>
                         </div><!-- fin header -->
                         
-                        <div class="dashboardCubos oculto floatLeft bordeDerAba" id="toDo">
+                        <div class="dashboardCubos oculto floatLeft bordeDerAba" onclick="cambiaSeccion('pageToDo');" id="toDo">
                             <div class="titulo textAlignLeft rojo"> To-Do</div>
                             <div class="footerInterno">
                                 <div class="icono floatLeft"> <img src="template/iconos/tilde.png" /> </div>
                                 <div class="numero floatLeft rojo"> 32 </div>
                             </div>
                         </div><!-- fin toDo -->
-                        <div class="dashboardCubos oculto floatLeft bordeAba" id="notifications">
+                        <div class="dashboardCubos oculto floatLeft bordeAba" onclick="cambiaSeccion('pageNotifications');" id="notifications">
                             <div class="titulo textAlignLeft naranja"> Notifications</div>
                             <div class="footerInterno">
                                 <div class="icono floatLeft"> <img src="template/iconos/campana.png" /> </div>
@@ -76,14 +77,14 @@
                             </div>
                         </div>
                         
-                        <div class="dashboardCubos oculto floatLeft bordeDerAba" id="calendario">
+                        <div class="dashboardCubos oculto floatLeft bordeDerAba" onclick="cambiaSeccion('pageCalendario');" id="calendario">
                             <div class="titulo textAlignLeft verde"> Calendario</div>
                             <div class="footerInterno">
                                 <div class="icono floatLeft"> <img src="template/iconos/calendario.png" /> </div>
                                 <div class="numero floatLeft verde"> 32 </div>
                             </div>
                         </div>
-                        <div class="dashboardCubos oculto floatLeft bordeAba">
+                        <div class="dashboardCubos oculto floatLeft bordeAba" onclick="cambiaSeccion('pageLeads');" id="leads">
                             <div class="titulo textAlignLeft celeste"> Leads</div>
                             <div class="footerInterno">
                                 <div class="icono floatLeft"> <img src="template/iconos/leads.png" /> </div>
@@ -91,14 +92,14 @@
                             </div>
                         </div>
                         
-                        <div class="dashboardCubos oculto floatLeft bordeDer">
+                        <div class="dashboardCubos oculto floatLeft bordeDer" onclick="cambiaSeccion('pageMessages');" id="messages">
                             <div class="titulo textAlignLeft azul"> Messages</div>
                             <div class="footerInterno">
                                 <div class="icono floatLeft"> <img src="template/iconos/notificaciones.png" /> </div>
                                 <div class="numero floatLeft azul"> 32 </div>
                             </div>
                         </div>
-                        <div class="dashboardCubos oculto floatLeft ">
+                        <div class="dashboardCubos oculto floatLeft " onclick="cambiaSeccion('pageSettings');"  id="settings">
                             <div class="titulo textAlignLeft gris"> Settings</div>
                             <div class="footerInterno">
                                 <div class="icono floatLeft"> <img src="template/iconos/settings.png" /> </div>
@@ -106,7 +107,113 @@
                             </div>
                         </div>
                     </div><!-- Fin pageMenu -->
+                    <!-- mundo leads -->
+                    <div class="medidasPaginas oculto bgColorLeads" id="pageLeads">
+                        <div class="header colorDashboard"> 
+                            <div class="textAlignCenter headerTitulo blanco"> 
+                                <div class="positionAbsolute volverCuadros"> <img src="template/iconos/volver.png" onclick="cambiaSeccion('pageMenu');" /></div>
+                                Leads
+                                <div class="imagen floatRight"> 
+                                    <img src="template/iconos/lupa.png" class="lupa" /> 
+                                    <div class="oculto contenedorBusqueda">
+                                        <form name="buscarDashboard">
+                                            <input type="text" name="buscarDashboard" class="buscarDashboard" />
+                                        </form>
+                                    </div>
+                                </div><!-- fin imagen -->
+                            </div>
+                        </div><!-- fin header -->
+                        <div class="contenedorLeads" id="muestraContLeads">
+                            <div class="cajaLeads floatLeft w100">
+                                <div class="icono floatLeft">
+                                    <img src="./template/leaddefault.png" />
+                                </div>
+                                <div class="floatLeft subCajaLeads">
+                                    <div class="floatLeft nombreLeads celeste">{nombre}</div>
+                                    <div class="clearBoth"></div>
+                                    <div class="floatLeft fechaHoraLeads gris">{fecha}</div>
+                                </div>
+                                <div class="floatRight flechita">
+                                    <img src="template/iconos/flechita.png" />
+                                </div>
+                            </div> <!-- Fin caja Leads  -->
+                        </div><!-- Fin ContenedorLeads -->
+                        <div class="footer textAlignCenter">
+                            <div class="menuContenedor margin0auto">
+                                <div class="floatLeft celeste selected" onclick="haceCambioLeads('lAll','todos')" id="lAll"> All</div>
+                                <div class="floatLeft celeste" onclick="haceCambioLeads('lToday','today')" id="lToday">Today</div>
+                                <div class="floatLeft celeste" onclick="haceCambioLeads('lArchive','archive')" id="lArchive">Archive</div>
+                                <div class="floatRight" onclick="cambiaSeccion('pageLeadsForm');"><img src="template/masleads.png" /></div>
+                            </div>
+                        </div><!-- footer -->
+                    </div><!-- Fin pageleads -->
 
+                    <div class="medidasPaginas oculto bgColorLeads" id="pageLeadsForm">
+                        <div class="header colorDashboard"> 
+                            <div class="textAlignCenter headerTitulo blanco"> 
+                                <div class="positionAbsolute volverCuadros"> <img src="template/iconos/back.png" onclick="cambiaSeccion('pageLeads');" /></div>
+                                Leads
+                                <!-- <div class="imagen floatRight"> 
+                                    <img src="template/iconos/lupa.png" class="lupa" /> 
+                                    <div class="oculto contenedorBusqueda">
+                                        <form name="buscarDashboard">
+                                            <input type="text" name="buscarDashboard" class="buscarDashboard" />
+                                        </form>
+                                    </div>
+                                </div> --><!-- fin imagen -->
+                            </div>
+                        </div><!-- fin header -->
+                        <form name="leadsAdd" class="contenedorLeads">
+                            <div class="floatLeft conteLeadsFormTitulos">
+                                <div class="floatLeft w100">Status</div>
+                                <div class="floatLeft w100">Date</div>
+                                <div class="floatLeft w100">First Name</div>
+                                <div class="floatLeft w100">Last Name</div>
+                                <div class="floatLeft w100">Partner&quot;s Name</div>
+                                <div class="floatLeft w100">Phone</div>
+                                <div class="floatLeft w100">Email</div>
+                                <div class="floatLeft w100">Event Type</div>
+                                <div class="floatLeft w100">Duration</div>
+                                <div class="floatLeft w100"># Guest</div>
+                                <div class="floatLeft w100">Budget</div>
+                            </div>
+                            <div class="floatLeft conteLeadsFormContenido">
+                                <div class="floatLeft w100"><input tabindex="1" type="text" class="floatLeft w100"   placeholder="status" name="status" /></div>
+                                <div class="floatLeft w100"><input tabindex="2" type="date" class="floatLeft w100"   placeholder="date" name="date" /></div>
+                                <div class="floatLeft w100"><input tabindex="3" type="text" class="floatLeft w100"   placeholder="firstName" name="firstName" /></div>
+                                <div class="floatLeft w100"><input tabindex="4" type="text" class="floatLeft w100"   placeholder="lastName" name="lastName" /></div>
+                                <div class="floatLeft w100"><input tabindex="5" type="text" class="floatLeft w100"   placeholder="partner" name="partner" /></div>
+                                <div class="floatLeft w100"><input tabindex="6" type="tel" class="floatLeft w100"    placeholder="phone" name="phone" /></div>
+                                <div class="floatLeft w100"><input tabindex="7" type="email" class="floatLeft w100"  placeholder="email" name="email" /></div>
+                                <div class="floatLeft w100">
+                                    <select class="floatLeft w100" name="eventType" tabindex="8" >
+                                        <option value="Wedding">Wedding</option>
+                                        <option value="Corporate">Corporate</option>
+                                        <option value="Private Party">Private Party</option>
+                                        <option value="Graduation">Graduation</option>
+                                        <option value="Anniversary">Anniversary</option>
+                                    </select>
+                                </div>
+                                <div class="floatLeft w100"><input tabindex="9" type="text" class="floatLeft w100"   placeholder="duration" name="duration" /></div>
+                                <div class="floatLeft w100"><input tabindex="10" type="text" class="floatLeft w100"   placeholder="guest" name="guest" /></div>
+                                <div class="floatLeft w100"><input tabindex="11" type="text" class="floatLeft w100"   placeholder="budget" name="budget" /></div>
+                            </div>
+                            
+                            <input type="submit" class="submitear" value=" Save " />
+                        </form><!-- Fin ContenedorLeads -->
+
+                        <form name="leadsEdit" class="contenedorLeads">
+                            
+                        </form><!-- Fin ContenedorLeads -->
+                        <div class="footer textAlignCenter">
+                            <div class="menuContenedor margin0auto">
+                                <div class="floatLeft celeste selected" onclick="haceCambioLeadsForms('lHistory','todos')" id="lHistory"> History</div>
+                                <div class="floatLeft celeste" onclick="haceCambioLeadsForms('lProfile','today')" id="lProfile">Profile</div>
+                                <div class="floatLeft celeste" onclick="haceCambioLeadsForms('lNotes','archive')" id="lNotes">Notes</div>
+                            </div>
+                        </div><!-- footer -->
+                    </div><!-- Fin pageleads -->
+                    <!--  fin mundo leads -->
                 </div><!-- Fin de cuerpo de apps -->
             </div>
         </div>

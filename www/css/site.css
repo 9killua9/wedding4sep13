@@ -6,7 +6,7 @@
  *
 /* Datos Generales inicio del doc.*/
 body												{background-color:#93541d;}
-.medidasPaginas 									{width: 100%;height: 100%;text-align: center;position:absolute;}
+.medidasPaginas 									{width: 100%;min-height: 100%;max-height:auto;text-align: center;position:absolute;}
 #deviceready,#cuerpoDeApps							{width:100%;height: 100%;float:left;}
 .footer												{position:fixed; left:0px; bottom:0px; height:30px; width:100%;}
 .textAlignLeft                                      {text-align: left !important;}
@@ -38,7 +38,7 @@ body												{background-color:#93541d;}
 .negro                                              {color:#000000;}
 
 /*pagemenu*/
-#pageMenu{background-color:#ffffff;}
+#pageMenu                                           {background-color:#ffffff;}
 #pageMenu .header                                   {width:100%; height:90px; background-color:#93541d;}
 #pageMenu .header .headerTitulo                     {font-size:2em; width:100%;padding-top: 12px;padding-top:25px;}
 #pageMenu .header .headerTitulo .imagen             {margin:0 30px 0 -30px;}
@@ -51,7 +51,48 @@ body												{background-color:#93541d;}
 #pageMenu .dashboardCubos .footerInterno .icono     {float:left;margin-left:4%;}
 #pageMenu .dashboardCubos .footerInterno .numero    {float:right; margin-right: 7%;font-size: 5em;}
 
+/*pageleads*/
+#pageLeads                                          {background-color:#ffffff;}
+#pageLeads .header                                  {width:100%; height:90px; background-color:#14b9d6;}
+#pageLeads .header .headerTitulo                    {font-size:2em; width:100%;padding-top: 12px;padding-top:25px;}
+#pageLeads .header .headerTitulo .imagen            {margin:0 30px 0 -30px;}
+.bgColorLeads                                       {background-color:#f9f6e6 !important;}
+#pageLeads .contenedorLeads                         {background-color:#f9f6e6;}
+#pageLeads .contenedorLeads .cajaLeads              {background-color:#ffffff;padding:40px 0; border-bottom:1px solid #e3e3e3;}
+.cajaLeads .subCajaLeads .nombreLeads               {font-size: 2.4em;margin-left:22px;}
+.cajaLeads .subCajaLeads .fechaHoraLeads            {font-size: 1.4em;margin:3px 0 0 24px;}
+.cajaLeads .flechita                                {margin:24px 50px;}
+.cajaLeads .icono                                   {margin-left: 52px;}
+.cajaLeads .icono img                               {border-radius: 50%}
+#pageLeads .footer .menuContenedor                  {width:600px; text-align: center;background-color:#ffffff;}
+#pageLeads .footer .menuContenedor div              {width:149px;text-align: center; font-size: 1.6em;}
+#pageLeads .footer .menuContenedor div.celeste      {margin-top:6px;}
+#pageLeads .footer .menuContenedor div.selected     {color:#000000 !important;}
+#pageLeads .footer                                  {background-color:#ffffff;position:fixed; left:0px; bottom:0%; height: 60px; padding: 19px 0 0px 0; width: 100%; border-top: 1px solid #f0f0f0;}
 
+#pageLeadsForm                                      {background-color:#ffffff;}
+#pageLeadsForm .header                              {width:100%; height:90px; background-color:#14b9d6;}
+#pageLeadsForm .header .headerTitulo                {font-size:2em; width:100%;padding-top: 12px;padding-top:25px;}
+#pageLeadsForm .header .headerTitulo .imagen        {margin:0 30px 0 -30px;}
+#pageLeadsForm form .conteLeadsFormTitulos          {width:360px;margin-left: 44px;}
+#pageLeadsForm form .conteLeadsFormTitulos div      {color:#818181; font-size: 2em; height:45px; text-align: left; padding-top: 15px;}
+#pageLeadsForm form .conteLeadsFormContenido div    {color:#818181; font-size: 2em; height:60px; text-align: left; }
+#pageLeadsForm form .conteLeadsFormContenido        {width:48%;}
+#pageLeadsForm form .submitear                      {border:none;border-radius: 6px; width:90%;min-height:90px; max-height: 80px; background-color:#00bba6; color:#ffffff;font-size: 2em; margin-top:4%;}
+#pageLeadsForm form .conteLeadsFormContenido input  {border:none; background-color: transparent; font-size: 1em; height:59px;border-bottom: 1px solid #e3e3e3;}
+#pageLeadsForm form .conteLeadsFormContenido select {border:none; background-color: transparent; font-size: 1em; height:59px;border-bottom: 1px solid #e3e3e3;}
+#pageLeadsForm form .conteLeadsFormContenido 
+select option                                       {border:none !important; background-color: transparent; font-size: 1em; height:60px;}
+.lineaRoja                                          {border-bottom:1px solid red !important;}
+
+#pageLeadsForm .footer .menuContenedor              {width:600px; text-align: center;background-color:#ffffff;}
+#pageLeadsForm .footer .menuContenedor div          {width:149px;text-align: center; font-size: 1.6em;}
+#pageLeadsForm .footer .menuContenedor div.celeste  {margin-top:6px;}
+#pageLeadsForm .footer .menuContenedor div.selected {color:#000000 !important;}
+#pageLeadsForm .footer                              {background-color:#ffffff;position:fixed; left:0px; bottom:0%; height: 60px; padding: 19px 0 0px 0; width: 100%; border-top: 1px solid #f0f0f0;}
+
+
+.volverCuadros                                      {margin-left:12px;}
 /*Animaciones y transiciones*/
 /*Fade de centrado */
 @-webkit-keyframes animacionFadeCenterScale {
